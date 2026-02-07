@@ -5,44 +5,54 @@
   <title>CSS – Informatika Kelas XII</title>
 
   <style>
+    /* RESET DASAR */
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #f4f6f8;
       margin: 0;
       padding: 0;
-      line-height: 1.7;
       color: #333;
     }
 
-  header {
-  background: #fff;
-  color: #000;
-  padding: 40px 20px;
-  text-align: center;
-}
+    /* ================= HEADER ================= */
+    header {
+      background: #ffffff;
+      color: #000;
+      padding: 40px 20px;
+      text-align: center;
+      line-height: 1.2; /* rapat seperti Word */
+    }
 
-header h1 {
-  margin: 0 0 20px 0; /* after saja, before 0 */
-  font-size: 28px;
-  letter-spacing: 1px;
-}
+    header h1 {
+      margin: 0 0 18px 0; /* before 0, after kecil */
+      font-size: 28px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
 
-.header-table {
-  display: grid;
-  grid-template-columns: auto 20px auto;
-  justify-content: center;
-  gap: 4px 8px;
-  font-size: 16px;
-  text-align: left;
-}
+    .header-table {
+      display: grid;
+      grid-template-columns: 160px 10px 220px;
+      justify-content: center;
+      row-gap: 4px;
+      column-gap: 6px;
+      font-size: 16px;
+      text-align: left;
+    }
 
-.header-table div {
-  margin: 0;   /* BEFORE & AFTER = 0 */
-  padding: 0;
-}
+    .header-table div {
+      margin: 0;
+      padding: 0;
+      line-height: 1.2; /* paksa rapat */
+    }
 
+    /* ================= ISI ================= */
     section {
-      background: white;
+      background: #ffffff;
       max-width: 900px;
       margin: 25px auto;
       padding: 25px;
@@ -66,9 +76,9 @@ header h1 {
       font-size: 14px;
     }
 
-    /* DAFTAR ISI */
+    /* ================= DAFTAR ISI ================= */
     .toc {
-      background: #fff;
+      background: #ffffff;
       border: 1px solid #ddd;
       border-radius: 10px;
       padding: 20px;
@@ -94,6 +104,7 @@ header h1 {
       text-decoration: underline;
     }
 
+    /* ================= FOOTER ================= */
     footer {
       text-align: center;
       padding: 25px;
@@ -105,7 +116,7 @@ header h1 {
 
 <body>
 
-  <header>
+<header>
   <h1>MATERI PEMBELAJARAN</h1>
 
   <div class="header-table">
@@ -171,9 +182,9 @@ header h1 {
   </p>
   <code>
 &lt;style&gt;
-  p {
-    color: blue;
-  }
+p {
+  color: blue;
+}
 &lt;/style&gt;
   </code>
 </section>
