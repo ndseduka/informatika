@@ -2,163 +2,81 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <title>CSS Lanjutan - Kelas XII</title>
+  <title>CSS Lanjutan – Kelas XII</title>
 
-  <!-- Reveal.js CDN -->
+  <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css">
 
   <style>
-    h1, h2 { color: #00ffcc; }
+    h1, h2 {
+      color: #00ffcc;
+    }
     code {
       background: #222;
       padding: 6px 10px;
       border-radius: 6px;
       color: #ffd866;
+      display: inline-block;
     }
   </style>
 </head>
+
 <body>
 
 <div class="reveal">
   <div class="slides">
 
-    <!-- SLIDE 1 -->
     <section>
       <h1>CSS Lanjutan</h1>
-      <p><strong>Selector & Property</strong></p>
-      <small>Informatika Kelas XII</small>
+      <h3>Kelas XII</h3>
+      <p>Properti & Selector</p>
     </section>
 
-    <!-- SLIDE 2 -->
     <section>
-      <h2>Tujuan Pembelajaran</h2>
+      <h2>Apa itu Selector?</h2>
+      <p>Selector digunakan untuk memilih elemen HTML.</p>
+      <code>p { color: red; }</code>
+    </section>
+
+    <section>
+      <h2>Jenis Selector</h2>
       <ul>
-        <li>Memahami selector lanjutan CSS</li>
-        <li>Menggunakan property CSS modern</li>
-        <li>Menerapkan CSS pada website responsif</li>
+        <li>Selector Elemen</li>
+        <li>Selector Class</li>
+        <li>Selector ID</li>
       </ul>
     </section>
 
-    <!-- SLIDE 3 -->
     <section>
-      <h2>Review Singkat (Kelas XI)</h2>
+      <h2>Contoh Selector Class</h2>
+      <code>.kotak { background: blue; }</code>
+    </section>
+
+    <section>
+      <h2>Properti CSS</h2>
       <ul>
-        <li>Selector tag, class, dan id</li>
-        <li>Property dasar: color, font-size</li>
-      </ul>
-    </section>
-
-    <!-- SLIDE 4 -->
-    <section>
-      <h2>Selector Descendant</h2>
-      <p>Memilih elemen di dalam elemen lain</p>
-      <pre><code>div p {
-  color: red;
-}</code></pre>
-    </section>
-
-    <!-- SLIDE 5 -->
-    <section>
-      <h2>Selector Child ( > )</h2>
-      <p>Hanya memilih anak langsung</p>
-      <pre><code>ul > li {
-  color: blue;
-}</code></pre>
-    </section>
-
-    <!-- SLIDE 6 -->
-    <section>
-      <h2>Pseudo-class</h2>
-      <p>Digunakan untuk kondisi tertentu</p>
-      <pre><code>a:hover {
-  color: orange;
-}</code></pre>
-      <pre><code>input:focus {
-  border: 2px solid green;
-}</code></pre>
-    </section>
-
-    <!-- SLIDE 7 -->
-    <section>
-      <h2>Property Layout: Display</h2>
-      <pre><code>div {
-  display: flex;
-}</code></pre>
-      <ul>
-        <li>block</li>
-        <li>inline</li>
-        <li>flex</li>
-      </ul>
-    </section>
-
-    <!-- SLIDE 8 -->
-    <section>
-      <h2>Flexbox Dasar</h2>
-      <pre><code>.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}</code></pre>
-    </section>
-
-    <!-- SLIDE 9 -->
-    <section>
-      <h2>Property Box Model</h2>
-      <ul>
+        <li>color</li>
+        <li>background</li>
         <li>margin</li>
         <li>padding</li>
-        <li>border</li>
-      </ul>
-      <pre><code>div {
-  margin: 10px;
-  padding: 15px;
-}</code></pre>
-    </section>
-
-    <!-- SLIDE 10 -->
-    <section>
-      <h2>CSS Responsif</h2>
-      <p>Menyesuaikan tampilan dengan ukuran layar</p>
-      <pre><code>@media (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}</code></pre>
-    </section>
-
-    <!-- SLIDE 11 -->
-    <section>
-      <h2>Latihan Siswa</h2>
-      <ol>
-        <li>Buat selector hover pada tombol</li>
-        <li>Atur layout menggunakan flexbox</li>
-        <li>Buat tampilan responsif sederhana</li>
-      </ol>
-    </section>
-
-    <!-- SLIDE 12 -->
-    <section>
-      <h2>Kesimpulan</h2>
-      <ul>
-        <li>CSS lanjutan membuat website lebih dinamis</li>
-        <li>Selector membantu memilih elemen spesifik</li>
-        <li>Property mengatur tampilan dan layout</li>
       </ul>
     </section>
 
-    <!-- SLIDE 13 -->
     <section>
       <h2>Terima Kasih</h2>
-      <p>🙏</p>
+      <p>Siap praktik 🚀</p>
     </section>
 
   </div>
 </div>
 
+<!-- Reveal.js JS -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
 <script>
-  Reveal.initialize();
+  Reveal.initialize({
+    hash: true
+  });
 </script>
 
 </body>
