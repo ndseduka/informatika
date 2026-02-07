@@ -14,16 +14,32 @@
       color: #333;
     }
 
-    header {
-      background: #0d6efd;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
+  header {
+  background: #fff;
+  color: #000;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    header h1 {
-      margin: 0;
-    }
+header h1 {
+  margin: 0 0 20px 0; /* after saja, before 0 */
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.header-table {
+  display: grid;
+  grid-template-columns: auto 20px auto;
+  justify-content: center;
+  gap: 4px 8px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.header-table div {
+  margin: 0;   /* BEFORE & AFTER = 0 */
+  padding: 0;
+}
 
     section {
       background: white;
@@ -89,13 +105,14 @@
 
 <body>
 
-<header>
+  <header>
   <h1>MATERI PEMBELAJARAN</h1>
-  <div class="header-info">
-    <p><strong>Mata Pelajaran</strong> : Informatika</p>
-    <p><strong>Kelas/Semester</strong> : XII-A / Genap</p>
-    <p><strong>Topik</strong> : CSS</p>
-    <p><strong>Guru Pengampu</strong> : Wiwin Ashari, S.Pd</p>
+
+  <div class="header-table">
+    <div>Mata Pelajaran</div><div>:</div><div>Informatika</div>
+    <div>Kelas/Semester</div><div>:</div><div>XII-A / Genap</div>
+    <div>Topik</div><div>:</div><div>CSS</div>
+    <div>Guru Pengampu</div><div>:</div><div>Wiwin Ashari, S.Pd</div>
   </div>
 </header>
 
