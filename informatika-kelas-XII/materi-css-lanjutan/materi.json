@@ -6,7 +6,7 @@
       "konten": "<p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan tata letak halaman web yang dibuat dengan HTML.</p>"
     },
     {
-      "id": "fungsi",
+      "id": "fungsi CSS",
       "judul": "Fungsi CSS",
       "konten": "<ul><li>Mengatur warna dan font</li><li>Mengatur tata letak halaman</li><li>Membuat tampilan web lebih menarik</li><li>Memisahkan desain dari struktur HTML</li></ul>"
     },
