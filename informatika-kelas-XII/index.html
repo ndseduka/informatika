@@ -28,20 +28,12 @@
     </div>
 
     <button class="present-btn" onclick="toggleFullscreen()">⛶</button>
-
-    <div class="profile">
-        <img src="guru.jpg" alt="Guru">
-    </div>
 </header>
 
 <div class="container">
 
+    <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <div class="school-logo">
-            <img src="logo-sekolah.png" alt="Logo">
-            <span>SMA Negeri 1</span>
-        </div>
-
         <h3>BAB 1 : Pendahuluan</h3>
         <ul>
             <li class="menu-item active"
@@ -57,6 +49,7 @@
         </ul>
     </aside>
 
+    <!-- CONTENT -->
     <main class="content" id="contentArea">
         <iframe
             id="contentFrame"
@@ -64,13 +57,19 @@
             allowfullscreen>
         </iframe>
     </main>
-
 </div>
 
+<!-- FOTO GURU FLOATING -->
+<div class="guru-float">
+    <img src="guru.jpg" alt="Guru Mapel">
+</div>
+
+<!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 | <strong>Wiwin Ashari</strong> |
+    <div class="footer-text">
+        © 2026 · <strong>Wiwin Ashari</strong> ·
         <a href="mailto:nds.eduka@gmail.com">nds.eduka@gmail.com</a>
-    </p>
+    </div>
 
     <div class="social">
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
