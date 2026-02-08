@@ -1,10 +1,11 @@
-// GANTI LINK GOOGLE SLIDE DI SINI
-const slide1 = "https://docs.google.com/presentation/d/e/2PACX-1vSLIDE1/pub?start=false&loop=false";
-const slide2 = "https://docs.google.com/presentation/d/e/2PACX-1vSLIDE2/pub?start=false&loop=false";
-const slide3 = "https://docs.google.com/presentation/d/e/2PACX-1vSLIDE3/pub?start=false&loop=false";
-const slide4 = "https://docs.google.com/presentation/d/e/2PACX-1vSLIDE4/pub?start=false&loop=false";
-const slide5 = "https://docs.google.com/presentation/d/e/2PACX-1vSLIDE5/pub?start=false&loop=false";
+const slides = {
+    pendahuluan: "https://docs.google.com/presentation/d/e/SLIDE_ID_1/embed?start=false&loop=false&delayms=3000",
+    instalasi: "https://docs.google.com/presentation/d/e/SLIDE_ID_2/embed?start=false&loop=false",
+    hello: "https://docs.google.com/presentation/d/e/SLIDE_ID_3/embed?start=false&loop=false",
+    variabel: "https://docs.google.com/presentation/d/e/SLIDE_ID_4/embed?start=false&loop=false",
+    loop: "https://docs.google.com/presentation/d/e/SLIDE_ID_5/embed?start=false&loop=false"
+};
 
-function loadSlide(url) {
-  document.getElementById("slideFrame").src = url;
+function loadSlide(materi) {
+    document.getElementById("slideFrame").src = slides[materi];
 }
