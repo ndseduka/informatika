@@ -2,77 +2,82 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Ajar Informatika</title>
-
-    <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ICON -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
     <div class="header-text">
         <h1>Materi Ajar Informatika</h1>
-        <div class="meta">
-            <span>Topik CSS</span>
-            <span>XII-A</span>
-            <span>W. Ashari, S.Pd</span>
-        </div>
+        <p>CSS • Kelas XII-A</p>
     </div>
 
-    <button class="present-btn" onclick="toggleFullscreen()">⛶</button>
+    <!-- FOTO GURU -->
+    <div class="guru-float">
+        <img src="https://i.imgur.com/4Z7h6Ff.png" alt="Guru">
+    </div>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
 </header>
 
-<div class="container">
+<!-- LAYOUT -->
+<div class="layout">
 
     <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <h3>BAB 1 : Pendahuluan</h3>
-        <ul>
-            <li class="menu-item active"
-                onclick="loadDrive(this,'1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25')">
-                Pengantar CSS
-            </li>
-        </ul>
+        <h3>📚 Materi</h3>
 
-        <h3>BAB 2 : Dasar CSS</h3>
         <ul>
-            <li class="menu-item" onclick="loadSlide(this,'SLIDE_ID_2')">Selector</li>
-            <li class="menu-item" onclick="loadSlide(this,'SLIDE_ID_3')">Property</li>
+            <li class="active" onclick="loadDrive(this,'1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25')">
+                Pendahuluan
+            </li>
+
+            <li onclick="loadSlide(this,'1abcDEFghIJkLMnoPQR')">
+                CSS Dasar
+                <ul class="sub">
+                    <li>Selector</li>
+                    <li>Property</li>
+                </ul>
+            </li>
+
+            <li onclick="loadSlide(this,'1xyzDEFghIJkLMnoPQR')">
+                Layout
+                <ul class="sub">
+                    <li>Flexbox</li>
+                    <li>Grid</li>
+                </ul>
+            </li>
         </ul>
     </aside>
 
     <!-- CONTENT -->
-    <main class="content" id="contentArea">
-        <iframe
-            id="contentFrame"
-            src="https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview"
-            allowfullscreen>
-        </iframe>
-    </main>
-</div>
+    <main class="content">
+        <div class="viewer">
+            <iframe id="slideFrame" allowfullscreen></iframe>
+        </div>
 
-<!-- FOTO GURU FLOATING -->
-<div class="guru-float">
-    <img src="guru.jpg" alt="Guru Mapel">
+        <button class="fullscreen-btn" onclick="goFullscreen()">
+            ⛶ Mode Presentasi
+        </button>
+    </main>
 </div>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-text">
-        © 2026 · <strong>Wiwin Ashari</strong> ·
-        <a href="mailto:nds.eduka@gmail.com">nds.eduka@gmail.com</a>
-    </div>
+    <p>© 2026 | Wiwin Ashari | nds.eduka@gmail.com</p>
 
     <div class="social">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
         <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
