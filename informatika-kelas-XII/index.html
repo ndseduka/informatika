@@ -2,37 +2,54 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Materi Pembelajaran</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Ajar Informatika</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-    <h1>MATERI PEMBELAJARAN</h1>
-    <div class="info">
-        <p><span>Mata Pelajaran</span> : Informatika</p>
-        <p><span>Kelas/Semester</span> : XII-A / Genap</p>
-        <p><span>Topik</span> : CSS</p>
-        <p><span>Guru Pengampu</span> : Wiwin Ashari, S.Pd</p>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <div class="header-text">
+        <h1>Materi Ajar Informatika</h1>
+        <div class="meta">
+            <span>Topik CSS</span>
+            <span>Kelas XII-A</span>
+            <span>W. Ashari, S.Pd</span>
+        </div>
     </div>
 </header>
 
 <div class="container">
-    <aside class="sidebar">
-        <h3>LEVEL DASAR</h3>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <h3>MATERI CSS</h3>
         <ul>
-            <li onclick="loadMateri('pendahuluan')">Pendahuluan</li>
-            <li onclick="loadMateri('instalasi')">Instalasi</li>
-            <li onclick="loadMateri('hello')">Hello World</li>
-            <li onclick="loadMateri('variabel')">Variabel</li>
-            <li onclick="loadMateri('loop')">Loop</li>
+            <li onclick="loadSlide('SLIDE_ID_1')">Pendahuluan</li>
+            <li onclick="loadSlide('SLIDE_ID_2')">Selector</li>
+            <li onclick="loadSlide('SLIDE_ID_3')">Property</li>
+            <li onclick="loadSlide('SLIDE_ID_4')">Layout</li>
+            <li onclick="loadSlide('SLIDE_ID_5')">Responsive</li>
         </ul>
     </aside>
 
+    <!-- CONTENT -->
     <main class="content">
-        <iframe id="slideFrame" allowfullscreen></iframe>
+        <iframe
+            id="slideFrame"
+            src="https://docs.google.com/presentation/d/e/2PACX-DEFAULT/embed?start=false&loop=false"
+            allowfullscreen>
+        </iframe>
     </main>
+
 </div>
 
 <script src="script.js"></script>
