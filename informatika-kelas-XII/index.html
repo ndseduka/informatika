@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Materi Informatika</title>
+<title>Materi Ajar Informatika</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -16,15 +16,20 @@
         <button class="menu-btn" onclick="toggleSidebar()">
             <i class="fas fa-bars"></i>
         </button>
+
         <div class="title">
             <h1>Materi Ajar Informatika</h1>
             <span>CSS • Kelas XII-A</span>
         </div>
     </div>
 
+    <!-- FOTO GURU (PASTI MUNCUL) -->
     <div class="header-right">
-        <img src="https://raw.githubusercontent.com/USERNAME/NAMA-REPO/main/assets/guru.jpg"
-             alt="Guru" class="guru-photo">
+        <img
+          src="https://raw.githubusercontent.com/ndseduka/informatika/main/informatika-kelas-XII/assets/guru.jpg"
+          alt="Guru Informatika"
+          class="guru-photo"
+        >
     </div>
 </header>
 
@@ -33,8 +38,9 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <h3>📘 Materi</h3>
+        <h3>📚 Materi</h3>
 
+        <!-- MENU 1 -->
         <div class="menu">
             <div class="menu-title">Pendahuluan</div>
             <ul>
@@ -43,6 +49,7 @@
             </ul>
         </div>
 
+        <!-- MENU 2 -->
         <div class="menu">
             <div class="menu-title">Dasar CSS</div>
             <ul>
@@ -59,7 +66,9 @@
             <button onclick="fullscreen()">🎥 Mode Presentasi</button>
         </div>
 
-        <iframe id="slideFrame"
+        <!-- GOOGLE SLIDE -->
+        <iframe
+            id="slideFrame"
             src="https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview"
             allowfullscreen>
         </iframe>
