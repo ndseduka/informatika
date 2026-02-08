@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Ajar Informatika</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,36 +22,67 @@
         <h1>Materi Ajar Informatika</h1>
         <div class="meta">
             <span>Topik CSS</span>
-            <span>Kelas XII-A</span>
+            <span>XII-A</span>
             <span>W. Ashari, S.Pd</span>
         </div>
+    </div>
+
+    <button class="present-btn" onclick="toggleFullscreen()">⛶</button>
+
+    <div class="profile">
+        <img src="guru.jpg" alt="Guru">
     </div>
 </header>
 
 <div class="container">
 
-    <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <h3>MATERI CSS</h3>
+        <div class="school-logo">
+            <img src="logo-sekolah.png" alt="Logo">
+            <span>SMA Negeri 1</span>
+        </div>
+
+        <h3>BAB 1 : Pendahuluan</h3>
         <ul>
-            <li onclick="loadSlide('SLIDE_ID_1')">Pendahuluan</li>
-            <li onclick="loadSlide('SLIDE_ID_2')">Selector</li>
-            <li onclick="loadSlide('SLIDE_ID_3')">Property</li>
-            <li onclick="loadSlide('SLIDE_ID_4')">Layout</li>
-            <li onclick="loadSlide('SLIDE_ID_5')">Responsive</li>
+            <li class="menu-item active"
+                onclick="loadDrive(this,'1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25')">
+                Pengantar CSS
+            </li>
+        </ul>
+
+        <h3>BAB 2 : Dasar CSS</h3>
+        <ul>
+            <li class="menu-item" onclick="loadSlide(this,'SLIDE_ID_2')">Selector</li>
+            <li class="menu-item" onclick="loadSlide(this,'SLIDE_ID_3')">Property</li>
         </ul>
     </aside>
 
-    <!-- CONTENT -->
-    <main class="content">
+    <main class="content" id="contentArea">
         <iframe
-            id="slideFrame"
-            src="https://docs.google.com/presentation/d/e/2PACX-DEFAULT/embed?start=false&loop=false"
+            id="contentFrame"
+            src="https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview"
             allowfullscreen>
         </iframe>
     </main>
 
 </div>
+
+<footer class="footer">
+    <p>© 2026 | <strong>Wiwin Ashari</strong> |
+        <a href="mailto:nds.eduka@gmail.com">nds.eduka@gmail.com</a>
+    </p>
+
+    <div class="social">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
 
 <script src="script.js"></script>
 </body>
