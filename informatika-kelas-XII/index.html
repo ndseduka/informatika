@@ -5,26 +5,24 @@
     <title>Materi Ajar Informatika</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
-    <div class="header-text">
+    <div class="header-left">
         <h1>Materi Ajar Informatika</h1>
-        <p>CSS • Kelas XII-A</p>
+        <p>Topik CSS • Kelas XII-A</p>
     </div>
 
-    <!-- FOTO GURU -->
-    <div class="guru-float">
-        <img src="https://i.imgur.com/4Z7h6Ff.png" alt="Guru">
+    <div class="header-right">
+        <div class="guru-photo">
+            <img src="https://i.imgur.com/4Z7h6Ff.png" alt="Guru">
+        </div>
     </div>
 
-    <!-- HAMBURGER -->
     <button class="hamburger" onclick="toggleSidebar()">
         <i class="fas fa-bars"></i>
     </button>
@@ -35,9 +33,11 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <h3>📚 Materi</h3>
+        <div class="sidebar-title">
+            📚 Materi Pembelajaran
+        </div>
 
-        <ul>
+        <ul class="menu">
             <li class="active" onclick="loadDrive(this,'1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25')">
                 Pendahuluan
             </li>
@@ -51,7 +51,7 @@
             </li>
 
             <li onclick="loadSlide(this,'1xyzDEFghIJkLMnoPQR')">
-                Layout
+                Layout CSS
                 <ul class="sub">
                     <li>Flexbox</li>
                     <li>Grid</li>
@@ -77,15 +77,14 @@
     <p>© 2026 | Wiwin Ashari | nds.eduka@gmail.com</p>
 
     <div class="social">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
 </footer>
 
-<!-- BACK TO TOP -->
 <button id="backToTop" onclick="scrollToTop()">↑</button>
 
 <script src="script.js"></script>
