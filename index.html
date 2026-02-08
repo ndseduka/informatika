@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materi Ajar Informatika</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(14px);
+    border-radius:22px;
+    padding:36px 28px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.icon{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:38px;
+}
+
+h1{
+    font-size:22px;
+    margin-bottom:6px;
+    letter-spacing:.5px;
+}
+
+p{
+    font-size:14px;
+    opacity:.9;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:grid;
+    gap:14px;
+}
+
+.buttons a{
+    text-decoration:none;
+    padding:14px;
+    border-radius:14px;
+    background:#fff;
+    color:#1e40af;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    transition:.25s;
+}
+
+.buttons a:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.footer{
+    margin-top:26px;
+    font-size:12px;
+    opacity:.85;
+}
+
+/* Responsive kecil */
+@media(max-width:400px){
+    h1{font-size:20px;}
+    .card{padding:28px 20px;}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="icon">
+        <i class="fas fa-laptop-code"></i>
+    </div>
+
+    <h1>Materi Ajar Informatika</h1>
+    <p>Silakan pilih kelas</p>
+
+    <div class="buttons">
+        <a href="informatika-kelas-XI/index.html">
+            <i class="fas fa-user-graduate"></i>
+            Kelas XI
+        </a>
+        <a href="informatika-kelas-XII/index.html">
+            <i class="fas fa-user-graduate"></i>
+            Kelas XII
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 | Wiwin Ashari | nds.eduka@gmail.com
+    </div>
+</div>
+
+</body>
+</html>
 
