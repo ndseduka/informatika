@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Belajar Python</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Materi Pembelajaran</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="navbar">
-  <div class="header-left">
-    <h1>Materi Ajar Informatika</h1>
-    <p class="subtitle">Topik: Algoritma & Pemrograman</p>
-  </div>
-
-  <div class="header-right">
-    <span class="info">Kelas: X RPL 1</span>
-    <span class="info">Guru: Bapak/Ibu Andi, S.Kom</span>
-  </div>
+<header class="header">
+    <h1>MATERI PEMBELAJARAN</h1>
+    <div class="info">
+        <p><span>Mata Pelajaran</span> : Informatika</p>
+        <p><span>Kelas/Semester</span> : XII-A / Genap</p>
+        <p><span>Topik</span> : CSS</p>
+        <p><span>Guru Pengampu</span> : Wiwin Ashari, S.Pd</p>
+    </div>
 </header>
 
-<!-- MAIN LAYOUT -->
 <div class="container">
+    <aside class="sidebar">
+        <h3>LEVEL DASAR</h3>
+        <ul>
+            <li onclick="loadSlide('pendahuluan')">Pendahuluan</li>
+            <li onclick="loadSlide('instalasi')">Instalasi</li>
+            <li onclick="loadSlide('hello')">Hello World</li>
+            <li onclick="loadSlide('variabel')">Variabel</li>
+            <li onclick="loadSlide('loop')">Loop</li>
+        </ul>
+    </aside>
 
-  <!-- SIDEBAR KIRI -->
-  <aside class="sidebar">
-    <h3>LEVEL DASAR</h3>
-    <ul>
-      <li onclick="loadSlide(slide1)">Pendahuluan</li>
-      <li onclick="loadSlide(slide2)">Instalasi</li>
-      <li onclick="loadSlide(slide3)">Hello World</li>
-      <li onclick="loadSlide(slide4)">Variabel</li>
-      <li onclick="loadSlide(slide5)">Loop</li>
-    </ul>
-  </aside>
-
-  <!-- KONTEN KANAN -->
-  <main class="content">
-    <iframe
-      id="slideFrame"
-      src="https://docs.google.com/presentation/d/e/2PACX-1vCONTOH_SLIDE/pub?start=false&loop=false&delayms=3000"
-      frameborder="0"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-  </main>
-
+    <main class="content">
+        <iframe 
+            id="slideFrame"
+            src=""
+            allowfullscreen>
+        </iframe>
+    </main>
 </div>
 
 <script src="script.js"></script>
