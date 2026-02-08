@@ -13,9 +13,10 @@
 <header class="header">
     <div class="header-left">
 
-        <!-- TOMBOL BALIK (TAMBAHAN SAJA) -->
-        <a href="../index.html" class="back-btn" title="Kembali">
+        <!-- TOMBOL KEMBALI KE PILIH KELAS -->
+        <a href="../index.html" class="back-btn" title="Kembali ke Pilih Kelas">
             <i class="fas fa-arrow-left"></i>
+            <span>Kembali</span>
         </a>
 
         <button class="menu-btn" onclick="toggleSidebar()">
@@ -36,8 +37,53 @@
     </div>
 </header>
 
-<!-- ISI LAYOUT, SIDEBAR, CONTENT -->
-<!-- TIDAK DIUBAH SAMA SEKALI -->
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <h3>📚 Materi</h3>
+
+        <div class="menu">
+            <div class="menu-title">Pendahuluan</div>
+            <ul>
+                <li onclick="loadSlide(this, slides.pengertian)">Pengertian CSS</li>
+                <li onclick="loadSlide(this, slides.sejarah)">Sejarah CSS</li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <div class="menu-title">Dasar CSS</div>
+            <ul>
+                <li onclick="loadSlide(this, slides.sintaks)">Sintaks CSS</li>
+                <li onclick="loadSlide(this, slides.selector)">Selector</li>
+                <li onclick="loadSlide(this, slides.properti)">Properti</li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="toolbar">
+            <button onclick="fullscreen()">🎥 Mode Presentasi</button>
+        </div>
+
+        <iframe
+            id="slideFrame"
+            src="https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview"
+            allowfullscreen>
+        </iframe>
+    </main>
+</div>
+
+<footer class="footer">
+    <p>© 2026 | Wiwin Ashari | nds.eduka@gmail.com</p>
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+<button id="backToTop" onclick="scrollTopPage()">⬆</button>
 
 <script src="script.js"></script>
 </body>
