@@ -2,36 +2,27 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Materi Pembelajaran</title>
+  <title>Belajar Python</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- KOP ATAS -->
-<section class="kop">
-  <h2>MATERI PEMBELAJARAN</h2>
-  <table>
-    <tr>
-      <td>Mata Pelajaran</td><td>:</td><td>Informatika</td>
-    </tr>
-    <tr>
-      <td>Kelas/Semester</td><td>:</td><td>XII-A / Genap</td>
-    </tr>
-    <tr>
-      <td>Topik</td><td>:</td><td>CSS</td>
-    </tr>
-    <tr>
-      <td>Guru Pengampu</td><td>:</td><td>Wiwin Ashari, S.Pd</td>
-    </tr>
-  </table>
-</section>
+<!-- HEADER -->
+<header class="navbar">
+  <div class="logo">🐍 BelajarPython</div>
+  <nav>
+    <a href="#">Tutorial</a>
+    <a href="#">Artikel</a>
+    <a href="#">Kontribusi</a>
+  </nav>
+</header>
 
-<!-- LAYOUT -->
+<!-- MAIN LAYOUT -->
 <div class="container">
 
-  <!-- SIDEBAR -->
+  <!-- SIDEBAR KIRI -->
   <aside class="sidebar">
-    <strong>LEVEL DASAR</strong>
+    <h3>LEVEL DASAR</h3>
     <ul>
       <li onclick="loadSlide(slide1)">Pendahuluan</li>
       <li onclick="loadSlide(slide2)">Instalasi</li>
@@ -41,12 +32,14 @@
     </ul>
   </aside>
 
-  <!-- KONTEN -->
+  <!-- KONTEN KANAN -->
   <main class="content">
     <iframe
       id="slideFrame"
-      src="https://docs.google.com/presentation/d/e/2PACX-CONTOH/pub?start=false&loop=false"
-      allowfullscreen>
+      src="https://docs.google.com/presentation/d/e/2PACX-1vCONTOH_SLIDE/pub?start=false&loop=false&delayms=3000"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy">
     </iframe>
   </main>
 
