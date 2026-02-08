@@ -38,7 +38,6 @@ body{
 
 .title h1{
     font-size:18px;
-    font-weight:600;
 }
 .title span{
     font-size:12px;
@@ -62,7 +61,7 @@ body{
 /* SIDEBAR */
 .sidebar{
     width:260px;
-    background:#ffffff;
+    background:#fff;
     padding:18px;
     border-right:1px solid #e5e7eb;
 }
@@ -167,14 +166,17 @@ iframe{
 /* RESPONSIVE */
 @media(max-width:768px){
     .menu-btn{display:block;}
+
     .sidebar{
         position:fixed;
         left:-270px;
         top:64px;
-        height:100%;
+        height:calc(100vh - 64px);
         z-index:1000;
         transition:.3s;
+        overflow-y:auto;
     }
+
     .sidebar.show{
         left:0;
     }
