@@ -10,26 +10,29 @@ body {
 }
 
 /* HEADER */
+/* HEADER */
 .header {
     background: #ffffff;
     border-bottom: 3px solid #1f4aa8;
-    padding: 20px;
+    padding: 12px 20px;   /* sebelumnya 20px → diperkecil */
     text-align: center;
 }
 
 .header h1 {
     color: #1f4aa8;
-    margin-bottom: 15px;
+    margin-bottom: 8px;  /* sebelumnya 15px */
+    font-size: 26px;     /* sedikit diperkecil */
     letter-spacing: 1px;
 }
 
 .info {
     display: inline-block;
     text-align: left;
+    font-size: 14px;     /* lebih ramping */
 }
 
 .info p {
-    margin: 5px 0;
+    margin: 3px 0;       /* sebelumnya 5px */
 }
 
 .info span {
@@ -37,6 +40,7 @@ body {
     width: 150px;
     font-weight: bold;
 }
+
 
 /* LAYOUT */
 .container {
