@@ -3,17 +3,15 @@ const sidebar = document.getElementById("sidebar");
 const backToTop = document.getElementById("backToTop");
 
 const slides = {
-    pengertian: "https://drive.google.com/file/d/ID_SLIDE_XII_1/preview",
-    sejarah: "https://drive.google.com/file/d/ID_SLIDE_XII_2/preview",
-    sintaks: "https://drive.google.com/file/d/ID_SLIDE_XII_3/preview",
-    selector: "https://drive.google.com/file/d/ID_SLIDE_XII_4/preview",
-    properti: "https://drive.google.com/file/d/ID_SLIDE_XII_5/preview"
+    pengertian: "https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview",
+    sejarah: "https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview",
+    sintaks: "https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview",
+    selector: "https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview",
+    properti: "https://drive.google.com/file/d/1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25/preview"
 };
 
 function loadSlide(el, url){
-    document.querySelectorAll(".sidebar li")
-        .forEach(li => li.classList.remove("active"));
-
+    document.querySelectorAll(".sidebar li").forEach(li=>li.classList.remove("active"));
     el.classList.add("active");
     slideFrame.src = url;
 
@@ -27,24 +25,15 @@ function toggleSidebar(){
 }
 
 function fullscreen(){
-    if (slideFrame.requestFullscreen) {
+    if(slideFrame.requestFullscreen){
         slideFrame.requestFullscreen();
-    } else if (slideFrame.webkitRequestFullscreen) {
-        slideFrame.webkitRequestFullscreen();
     }
 }
 
-window.onscroll = () => {
-    backToTop.style.display =
-        window.scrollY > 200 ? "block" : "none";
-};
-
-function scrollTopPage(){
-    window.scrollTo({ top:0, behavior:"smooth" });
+window.onscroll = ()=>{
+    backToTop.style.display = window.scrollY > 200 ? "block" : "none";
 }
 
-/* LOAD SLIDE PERTAMA */
-window.onload = () => {
-    const first = document.querySelector(".sidebar li");
-    loadSlide(first, slides.pengertian);
-};
+function scrollTopPage(){
+    window.scrollTo({top:0, behavior:'smooth'});
+}
