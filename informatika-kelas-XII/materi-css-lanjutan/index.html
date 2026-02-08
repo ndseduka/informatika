@@ -2,36 +2,56 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>CSS – Informatika Kelas XII</title>
+  <title>Materi Pembelajaran</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>MATERI PEMBELAJARAN</h1>
-  <div class="header-table">
-    <div>Mata Pelajaran</div><div>:</div><div>Informatika</div>
-    <div>Kelas/Semester</div><div>:</div><div>XII-A / Genap</div>
-    <div>Topik</div><div>:</div><div>CSS</div>
-    <div>Guru Pengampu</div><div>:</div><div>Wiwin Ashari, S.Pd</div>
-  </div>
-</header>
+<!-- KOP ATAS -->
+<section class="kop">
+  <h2>MATERI PEMBELAJARAN</h2>
+  <table>
+    <tr>
+      <td>Mata Pelajaran</td><td>:</td><td>Informatika</td>
+    </tr>
+    <tr>
+      <td>Kelas/Semester</td><td>:</td><td>XII-A / Genap</td>
+    </tr>
+    <tr>
+      <td>Topik</td><td>:</td><td>CSS</td>
+    </tr>
+    <tr>
+      <td>Guru Pengampu</td><td>:</td><td>Wiwin Ashari, S.Pd</td>
+    </tr>
+  </table>
+</section>
 
-<div class="toc">
-  <h3>Daftar Isi</h3>
-  <ol id="toc-list">
-    <!-- Daftar isi akan dibuat otomatis oleh JS -->
-  </ol>
+<!-- LAYOUT -->
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <strong>LEVEL DASAR</strong>
+    <ul>
+      <li onclick="loadSlide(slide1)">Pendahuluan</li>
+      <li onclick="loadSlide(slide2)">Instalasi</li>
+      <li onclick="loadSlide(slide3)">Hello World</li>
+      <li onclick="loadSlide(slide4)">Variabel</li>
+      <li onclick="loadSlide(slide5)">Loop</li>
+    </ul>
+  </aside>
+
+  <!-- KONTEN -->
+  <main class="content">
+    <iframe
+      id="slideFrame"
+      src="https://docs.google.com/presentation/d/e/2PACX-CONTOH/pub?start=false&loop=false"
+      allowfullscreen>
+    </iframe>
+  </main>
+
 </div>
 
-<div id="materi-container">
-  <!-- Konten materi akan dimuat di sini -->
-</div>
-
-<footer>
-  © 2026 – Materi Informatika Kelas XII - Wiwin Ashari
-</footer>
-
-<script src="materi.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
