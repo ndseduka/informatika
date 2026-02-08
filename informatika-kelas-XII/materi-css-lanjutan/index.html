@@ -1,23 +1,57 @@
-<section class="kop">
-  <div class="kop-inner">
-    <img src="logo-sekolah.png" alt="Logo Sekolah" class="logo">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Materi Pembelajaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="kop-text">
-      <h2>MATERI PEMBELAJARAN</h2>
-      <table>
-        <tr>
-          <td>Mata Pelajaran</td><td>:</td><td>Informatika</td>
-        </tr>
-        <tr>
-          <td>Kelas/Semester</td><td>:</td><td>XII-A / Genap</td>
-        </tr>
-        <tr>
-          <td>Topik</td><td>:</td><td>CSS</td>
-        </tr>
-        <tr>
-          <td>Guru Pengampu</td><td>:</td><td>Wiwin Ashari, S.Pd</td>
-        </tr>
-      </table>
-    </div>
-  </div>
+<!-- KOP ATAS -->
+<section class="kop">
+  <h2>MATERI PEMBELAJARAN</h2>
+  <table>
+    <tr>
+      <td>Mata Pelajaran</td><td>:</td><td>Informatika</td>
+    </tr>
+    <tr>
+      <td>Kelas/Semester</td><td>:</td><td>XII-A / Genap</td>
+    </tr>
+    <tr>
+      <td>Topik</td><td>:</td><td>CSS</td>
+    </tr>
+    <tr>
+      <td>Guru Pengampu</td><td>:</td><td>Wiwin Ashari, S.Pd</td>
+    </tr>
+  </table>
 </section>
+
+<!-- LAYOUT -->
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <strong>LEVEL DASAR</strong>
+    <ul>
+      <li onclick="loadSlide(slide1)">Pendahuluan</li>
+      <li onclick="loadSlide(slide2)">Instalasi</li>
+      <li onclick="loadSlide(slide3)">Hello World</li>
+      <li onclick="loadSlide(slide4)">Variabel</li>
+      <li onclick="loadSlide(slide5)">Loop</li>
+    </ul>
+  </aside>
+
+  <!-- KONTEN -->
+  <main class="content">
+    <iframe
+      id="slideFrame"
+      src="https://docs.google.com/presentation/d/e/2PACX-CONTOH/pub?start=false&loop=false"
+      allowfullscreen>
+    </iframe>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
