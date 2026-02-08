@@ -33,30 +33,42 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-        <div class="sidebar-title">
-            📚 Materi Pembelajaran
-        </div>
+        <div class="sidebar-title">📚 Materi Pembelajaran</div>
 
         <ul class="menu">
-            <li class="active" onclick="loadDrive(this,'1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25')">
+
+            <!-- PENDAHULUAN -->
+            <li class="sub-item active"
+                onclick="loadDrive(this,'1J4DV5-ZFyYGy0ifuv0pTeKDPp7bHYR25')">
                 Pendahuluan
             </li>
 
-            <li onclick="loadSlide(this,'1abcDEFghIJkLMnoPQR')">
-                CSS Dasar
-                <ul class="sub">
-                    <li>Selector</li>
-                    <li>Property</li>
-                </ul>
-            </li>
+            <!-- BAB 1 -->
+            <li class="parent">CSS Dasar</li>
+            <ul class="sub">
+                <li class="sub-item"
+                    onclick="loadSlide(this,'SLIDE_ID_SELECTOR')">
+                    Selector
+                </li>
+                <li class="sub-item"
+                    onclick="loadSlide(this,'SLIDE_ID_PROPERTY')">
+                    Property
+                </li>
+            </ul>
 
-            <li onclick="loadSlide(this,'1xyzDEFghIJkLMnoPQR')">
-                Layout CSS
-                <ul class="sub">
-                    <li>Flexbox</li>
-                    <li>Grid</li>
-                </ul>
-            </li>
+            <!-- BAB 2 -->
+            <li class="parent">Layout CSS</li>
+            <ul class="sub">
+                <li class="sub-item"
+                    onclick="loadSlide(this,'SLIDE_ID_FLEXBOX')">
+                    Flexbox
+                </li>
+                <li class="sub-item"
+                    onclick="loadSlide(this,'SLIDE_ID_GRID')">
+                    Grid
+                </li>
+            </ul>
+
         </ul>
     </aside>
 
@@ -70,6 +82,7 @@
             ⛶ Mode Presentasi
         </button>
     </main>
+
 </div>
 
 <!-- FOOTER -->
@@ -85,6 +98,7 @@
     </div>
 </footer>
 
+<!-- BACK TO TOP -->
 <button id="backToTop" onclick="scrollToTop()">↑</button>
 
 <script src="script.js"></script>
