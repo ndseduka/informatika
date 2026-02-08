@@ -1,183 +1,27 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:#f1f5f9;
-    color:#1e293b;
-}
-
-/* HEADER */
-.header{
-    height:64px;
-    background:linear-gradient(135deg,#2563eb,#1e40af);
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 16px;
-}
-
-.header-left{
+/* === TAMBAHAN TOMBOL KEMBALI === */
+.back-btn{
     display:flex;
     align-items:center;
-    gap:14px;
-}
-
-.menu-btn{
-    background:none;
-    border:none;
+    gap:6px;
+    padding:6px 10px;
+    height:36px;
     color:#fff;
-    font-size:22px;
-    cursor:pointer;
-    display:none;
-}
-
-.title h1{
-    font-size:18px;
-}
-.title span{
-    font-size:12px;
-    opacity:.85;
-}
-
-.guru-photo{
-    width:44px;
-    height:44px;
-    border-radius:50%;
-    border:2px solid #fff;
-    object-fit:cover;
-}
-
-/* LAYOUT */
-.layout{
-    display:flex;
-    min-height:calc(100vh - 64px);
-}
-
-/* SIDEBAR */
-.sidebar{
-    width:260px;
-    background:#fff;
-    padding:18px;
-    border-right:1px solid #e5e7eb;
-}
-
-.sidebar h3{
-    margin-bottom:16px;
-    color:#1d4ed8;
-}
-
-.menu-title{
-    font-weight:600;
-    margin:14px 0 6px;
-}
-
-.sidebar ul{
-    list-style:none;
-}
-
-.sidebar li{
-    padding:10px 12px;
-    margin-bottom:6px;
-    border-radius:6px;
-    cursor:pointer;
+    text-decoration:none;
     font-size:14px;
-    transition:.2s;
-}
-
-.sidebar li:hover{
-    background:#e0e7ff;
-}
-
-.sidebar li.active{
-    background:#2563eb;
-    color:#fff;
-}
-
-/* CONTENT */
-.content{
-    flex:1;
-    padding:16px;
-}
-
-.toolbar{
-    text-align:right;
-    margin-bottom:10px;
-}
-
-.toolbar button{
-    padding:8px 14px;
-    border:none;
     border-radius:6px;
-    background:#2563eb;
-    color:#fff;
-    cursor:pointer;
+    transition:.2s;
+    white-space:nowrap;
 }
-
-iframe{
-    width:100%;
-    height:75vh;
-    border:none;
-    border-radius:10px;
-    background:#000;
+.back-btn i{
+    font-size:16px;
 }
-
-/* FOOTER */
-.footer{
-    text-align:center;
-    padding:18px;
-    background:#0f172a;
-    color:#cbd5f5;
-}
-
-.footer p{
-    font-size:13px;
-    margin-bottom:8px;
-}
-
-.social a{
-    color:#cbd5f5;
-    margin:0 8px;
-    font-size:18px;
-}
-
-.social a:hover{
-    color:#60a5fa;
-}
-
-/* BACK TO TOP */
-#backToTop{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    padding:10px 12px;
-    border:none;
-    border-radius:50%;
-    background:#2563eb;
-    color:#fff;
-    cursor:pointer;
-    display:none;
+.back-btn:hover{
+    background:rgba(255,255,255,.2);
 }
 
 /* RESPONSIVE */
-@media(max-width:768px){
-    .menu-btn{display:block;}
-
-    .sidebar{
-        position:fixed;
-        left:-270px;
-        top:64px;
-        height:calc(100vh - 64px);
-        z-index:1000;
-        transition:.3s;
-        overflow-y:auto;
-    }
-
-    .sidebar.show{
-        left:0;
+@media(max-width:480px){
+    .back-btn span{
+        display:none;
     }
 }
