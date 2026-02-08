@@ -1,50 +1,46 @@
 /* ======================
-   HEADER / KOP ATAS
+   KOP ATAS (FIX BIRU)
 ====================== */
 .kop {
-  background: linear-gradient(135deg, #1e3c72, #2a6db3);
+  background: linear-gradient(135deg, #0f3c68, #1e6fb9);
   color: #ffffff;
-  padding: 22px 20px;
-  border-bottom: 4px solid #ffcc00;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 22px 24px;
+  border-bottom: 5px solid #ffcc00;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
-.kop h2 {
-  text-align: center;
-  margin-bottom: 16px;
-  letter-spacing: 1px;
+/* FLEX */
+.kop-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LOGO */
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* TEXT */
+.kop-text h2 {
+  margin-bottom: 12px;
   font-size: 22px;
-  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-/* TABEL INFO */
-.kop table {
-  margin: 0 auto;
+.kop-text table {
   font-size: 14px;
   border-collapse: collapse;
 }
 
-.kop td {
-  padding: 5px 10px;
-  white-space: nowrap;
+.kop-text td {
+  padding: 4px 8px;
 }
 
-.kop td:nth-child(1) {
+.kop-text td:first-child {
   font-weight: bold;
-  opacity: 0.9;
-}
-
-.kop td:nth-child(2) {
-  padding: 0 6px;
-}
-
-.kop td:nth-child(3) {
-  font-weight: 500;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .kop table {
-    font-size: 13px;
-  }
+  width: 150px;
 }
