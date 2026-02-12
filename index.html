@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materi Ajar Informatika</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff;
+    text-align:center;
+}
+h1{margin-bottom:8px;}
+p{opacity:.9;margin-bottom:40px;}
+
+.container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card{
+    width:260px;
+    padding:30px;
+    background:#fff;
+    color:#1e293b;
+    border-radius:16px;
+    text-decoration:none;
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+.card:hover{transform:translateY(-8px);}
+.card i{
+    font-size:48px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+footer{
+    margin-top:50px;
+    font-size:13px;
+    opacity:.85;
+}
+</style>
+</head>
+<body>
+
+<h1>📘 Materi Ajar Informatika</h1>
+<p>Silakan pilih kelas</p>
+
+<div class="container">
+    <a href="informatika-kelas-XI/" class="card">
+        <i class="fas fa-user-graduate"></i>
+        <h2>Kelas XI</h2>
+    </a>
+
+    <a href="informatika-kelas-XII/" class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Kelas XII</h2>
+    </a>
+</div>
+
+<footer>
+    © 2026 | Wiwin Ashari | nds.eduka@gmail.com
+</footer>
+
+</body>
+</html>
